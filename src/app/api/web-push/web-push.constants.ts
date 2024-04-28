@@ -1,0 +1,1 @@
+export const SUBSCRIPTIONS_FILE_PATH = './subscription.json'

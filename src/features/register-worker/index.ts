@@ -1,0 +1,1 @@
+export { RegisterWorker } from './ui'
