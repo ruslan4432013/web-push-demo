@@ -37,5 +37,5 @@ export const requestWebPush = async () => {
     body: JSON.stringify(subscription),
   });
   const data = await res.json()
-  console.log(data)
+  return data
 };

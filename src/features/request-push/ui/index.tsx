@@ -1,9 +1,19 @@
 'use client'
 import { Button } from "@/shared/ui/button";
 import { requestWebPush } from "../lib/request-web-push";
+import { SubscriptionService } from "@/entities/subscription";
 
 export const RequestPush = () => {
+
+  const handleClick = async () => {
+    const res = await requestWebPush()
+    if (res) {
+      alert('Subscription successfully saved')
+    }
+    SubscriptionService.save(res)
+  }
+
   return (
-    <Button onClick={requestWebPush}>Нажмите, чтоб разрешить уведомления</Button>
+    <Button onClick={handleClick}>Нажмите, чтоб разрешить уведомления</Button>
   )
 }
