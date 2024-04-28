@@ -31,6 +31,8 @@ const send = async () => {
 
 
 export async function GET() {
-  const data = await send()
-  return Response.json(data)
+  setTimeout(() => {
+    send()
+  }, 10000)
+  return Response.json({ok: true})
 }
