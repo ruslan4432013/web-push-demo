@@ -3,6 +3,7 @@
 import { urlB64ToUint8Array } from "@/shared/lib/url-b64-to-unit-8-array";
 
 export const requestWebPush = async () => {
+  alert('Start request web push');
   const result = await Notification.requestPermission();
   alert(result)
   if (result === "denied") {
