@@ -6,6 +6,7 @@ import { SubscriptionService } from "@/entities/subscription";
 export const RequestPush = () => {
 
   const handleClick = async () => {
+    alert('Test Click')
     const res = await requestWebPush()
     if (res) {
       alert('Subscription successfully saved')
