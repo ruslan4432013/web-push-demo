@@ -11,7 +11,7 @@ self.addEventListener("push", (e) => {
   console.log("Push message has payload", body);
   const options = {
     body,
-    icon: "img.png",
+    icon: "icon-128x128.png",
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),

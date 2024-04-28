@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "WebPush Demo",
   description: "WebPush Demo project",
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
