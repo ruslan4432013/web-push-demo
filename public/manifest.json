@@ -1,6 +1,6 @@
 {
-  "name": "PushEngage",
-  "short_name": "PushEngage",
+  "name": "WebPushDemo",
+  "short_name": "WebPushDemo",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#3b43ff",
