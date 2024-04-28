@@ -12,10 +12,14 @@ export const requestWebPush = async () => {
     console.info("The user accepted the permission request.");
   }
   const vapid = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
-  if (!vapid) return;
+  if (!vapid) {
+    alert('No VAPID ID found.');
+    return
+  }
 
   const registration = await navigator.serviceWorker.getRegistration();
   if (!registration) {
+    alert('No registration found.');
     return;
   }
   const subscribed = await registration.pushManager.getSubscription();
